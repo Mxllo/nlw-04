@@ -8,7 +8,7 @@ class SurveyController{
 
         const user = surveysRepository.create(req.body);
         await surveysRepository.save(user)
-        return res.json(user).status(201);
+        return res.status(201).json(user);
     }
 
     async findAll(req: Request, res: Response){

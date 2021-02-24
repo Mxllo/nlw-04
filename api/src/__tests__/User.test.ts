@@ -15,7 +15,7 @@ describe("Users", () => {
             email: "test_eabil@gamil.xom",
             name: "Test Name",
         });
-        expect(response.status).toBe(200);
+        expect(response.status).toBe(201);
     });
 
     it("Should not be able to create a new user", async () => {
