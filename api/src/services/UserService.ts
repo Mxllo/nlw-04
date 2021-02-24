@@ -1,22 +1,25 @@
 import { getCustomRepository } from "typeorm";
-import { User } from "../models/user";
+import { User } from "../models/User";
 import { UserRepository } from "../repositories/UserRepository";
 
 class UserService{
+
 /*
-    static save(body: JSON): User{
+    function save(req: Request) {
         const usersRepository = getCustomRepository(UserRepository);
-        const user = usersRepository.create(body);
-        return ;
+        const user = usersRepository.create(req.body);
+        return user;
     }
 
-    checkAlreadyExists(body: JSON): boolean{
+    function checkAlreadyExists(req : Request){
+        const email = req.body.email;
         if(await usersRepository.findOne({email})){
             return res.status(400).json({"error": "User already exists"});
         }
         
         return true;
     }
-    */
+
+*/
 }
 export{UserService};
